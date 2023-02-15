@@ -1,0 +1,52 @@
+.home-page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.home-page-header-container img {
+  width: 310px;
+  border-radius: 10px;
+  height: 80px;
+}
+.home-page-header-container .cart-box .button {
+  width: 200px;
+  height: 80px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.home-page-header-container .cart-box .button:hover {
+  background-color: rgb(206, 181, 19);
+}
+.home-page-header-container .navLinks {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: space-evenly;
+}
+.home-page-header-container .navLinks .nav-home,
+.home-page-header-container .navLinks .nav-all-products,
+.home-page-header-container .navLinks .nav-categories {
+  width: 130px;
+  height: 80px;
+  display: flex;
+  text-align: center;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  border-radius: 10px;
+}
+.home-page-header-container .navLinks a {
+  color: white;
+  text-decoration: none;
+}

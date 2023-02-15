@@ -1,0 +1,29 @@
+.wrapper-categories-page {
+  display: flex;
+  justify-content: center;
+}
+.wrapper-categories-page .main-box-categories {
+  display: flex;
+  flex-direction: row;
+}
+.main-box-categories img {
+  width: 330px;
+  height: 320px;
+  border-radius: 5px;
+}
+.wrapper-categories-page .main-box-categories button {
+  width: 250px;
+  height: 46px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  font-size: 20px;
+}
+.main-box-categories .button:hover {
+  background-color: rgb(206, 181, 19);
+}
