@@ -1,5 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import electronicImg from "../../images/electronic-pic.png";
+import menImg from "../../images/mens-pic.png";
+import jewelryImg from "../../images/jewelry-pic.png";
+import womenImg from "../../images/women-img.png";
 
 import "./Categories.css";
 
@@ -23,7 +27,7 @@ const Categories = () => {
     <div className="wrapper-categories-page">
       <div className="main-box-categories">
         <div className="category-electronic">
-          <img src="electronic-pic.png" alt="" />
+          <img src={electronicImg} alt="" />
           <button
             className="button"
             onClick={() => {
@@ -34,7 +38,7 @@ const Categories = () => {
           </button>
         </div>
         <div className="category-men-clothing">
-          <img src="mens-pic.png" alt="" />
+          <img src={menImg} alt="" />
           <button
             className="button"
             onClick={() => onButtonClickCategory("men's clothing")}
@@ -43,7 +47,7 @@ const Categories = () => {
           </button>
         </div>
         <div className="category-jewelry">
-          <img src="jewelry-pic.png" alt="" />
+          <img src={jewelryImg} alt="" />
           <button
             className="button"
             onClick={() => onButtonClickCategory("jewelery")}
@@ -52,7 +56,7 @@ const Categories = () => {
           </button>
         </div>
         <div className="category-wom-clothing">
-          <img src="women-img.png" alt="" />
+          <img src={womenImg} alt="" />
           <button
             className="button"
             onClick={() => onButtonClickCategory("women's clothing")}
