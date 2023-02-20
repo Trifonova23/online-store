@@ -14,7 +14,7 @@ React Router Dom
 To get the project up and running, and view components in the browser, complete the following steps:
 
 1. Download and install Node: <https://nodejs.org/>
-2. Clone this repo: `git clone https://github.com/Trifonova23/online-store.git` (SSH) / (HTTPS)
+2. Clone this repo: `git clone https://github.com/Trifonova23/online-store.git`- (HTTPS) / `git@github.com:Trifonova23/online-store.git` - (SSH)
 3. Install project dependancies: `npm install`
 4. Start the development environment: `npm start`
 5. Open your browser and visit <http://localhost:3000>
@@ -42,3 +42,28 @@ To get the project up and running, and view components in the browser, complete 
 ├─ .gitignore # List of files and folders not tracked by Git
 ├─ package.json # Project manifest
 └─ README.md # This file
+
+|                  |                   |               |                  |
+| ---------------- | ----------------- | ------------- | ---------------- |
+| project-products |                   |               |                  |
+|                  | node-modules/     |               |                  |
+|                  | public/           |               |                  |
+|                  |                   | index.html    |                  |
+|                  |                   | manifest.json |                  |
+|                  |                   | robots.txt    |                  |
+|                  | src/              |               |                  |
+|                  |                   | components/   |                  |
+|                  |                   |               | ButtonDetails    |
+|                  |                   |               | Header           |
+|                  |                   |               | Product          |
+|                  |                   | images/       |                  |
+|                  |                   | pages/        |                  |
+|                  |                   |               | AllProductPage   |
+|                  |                   |               | Categories       |
+|                  |                   |               | HomePage         |
+|                  |                   |               | ProductDetails   |
+|                  |                   |               | SelectedCategory |
+|                  | .gitignore        |               |                  |
+|                  | package.json      |               |                  |
+|                  | package_lock.json |               |                  |
+|                  | README.md         |               |                  |
