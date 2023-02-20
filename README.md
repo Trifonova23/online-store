@@ -21,28 +21,6 @@ To get the project up and running, and view components in the browser, complete 
 
 ### Repo structure
 
-/
-├─ src/
-│ ├─ public/ # Public
-│ │ ├─ images/ # Raster images (used in component examples)
-│ │
-│ ├─ components/ # Components
-│ │ ├─ ButtonDetails/ # ..product details button
-│ │ ├─ Header/ # ..page navigation header
-│ │ ├─ Product/ # …reusable component with product information
-│ │
-│ ├─ Pages/ #
-│ │ ├─ AllProductPage/ # …page with all products on the site
-│ │ ├─ Categories/ # …page with a choice of four categories
-│ │ ├─ HomePage/ # …display latest offers with selected products
-│ │ ├─ ProductDetails/ # …product details (features)
-│ │ ├─ SelectedCategory/ # …show all provided items from selected category
-│ │
-│
-├─ .gitignore # List of files and folders not tracked by Git
-├─ package.json # Project manifest
-└─ README.md # This file
-
 |                  |                   |               |                  |
 | ---------------- | ----------------- | ------------- | ---------------- |
 | project-products |                   |               |                  |
