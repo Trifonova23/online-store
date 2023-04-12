@@ -1,12 +1,28 @@
 import React, { useState } from "react";
 import ProductModal from "../ButtonDetails/ProductModal";
+import { Form } from "react-router-dom";
+import {
+  addProduct,
+  deleteSingleProduct,
+  deleteAllProduct,
+} from "../../reducers/cart.js";
+import { useSelector, useDispatch } from "react-redux";
 
-const SingleProduct = ({ price, image, title, description }) => {
+const SingleProduct = ({ price, image, title, description, id }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const closeModalHandler = (isClosed) => {
     setIsModalOpen(isClosed);
   };
+
+  const addToCart = (data) => {
+    console.log("add to SingleProduct component");
+
+    dispatch(addProduct({ price, image, title, id })); // data from payload
+    // dispatch(deleteSingleProduct({ price, image, title, id }));
+  };
+
+  const dispatch = useDispatch();
 
   return (
     <div className="single-product-box">
@@ -33,6 +49,10 @@ const SingleProduct = ({ price, image, title, description }) => {
                 <i className="fa-regular fa-hand-pointer"></i>
                 <p className="text-details">Details</p>
               </div>
+            </button>
+
+            <button onClick={() => addToCart()} className="btn-add-to-cart">
+              Add To Cart
             </button>
           </div>
         }

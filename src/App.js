@@ -6,6 +6,7 @@ import ProductDetails from "./pages/ProductDetails/productDetails.jsx";
 import Categories from "./pages/Categories/Categories.jsx";
 import Header from "./components/Header/Header.jsx";
 import SelectedCategory from "./pages/SelectedCategory/SelectedCategory";
+import MyCart from "./pages/MyCart/MyCart";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="details" element={<ProductDetails />} />
           <Route path="categories" element={<Categories />} />
           <Route path="selected-category" element={<SelectedCategory />} />
+          <Route path="my-cart" element={<MyCart />} />
         </Routes>
       </Router>
     </div>
