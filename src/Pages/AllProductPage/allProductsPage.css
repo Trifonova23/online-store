@@ -16,6 +16,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
+  border-radius: 50px;
 }
 .single-product-box .product-img .product-image-box {
   min-height: 260px;
@@ -43,7 +45,7 @@
 }
 .main-container-all-products-page .single-product-box .description-product {
   width: 182px;
-  height: 30px;
+  height: 33px;
   display: flex;
   align-items: center;
   border-radius: 10px;

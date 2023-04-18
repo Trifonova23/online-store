@@ -41,19 +41,21 @@ const SingleProduct = ({ price, image, title, description, id }) => {
                 {description ? description : ""}
               </p>
             </div>
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="btn-product-details"
-            >
-              <div className="icon-and-details-box">
-                <i className="fa-regular fa-hand-pointer"></i>
-                <p className="text-details">Details</p>
-              </div>
-            </button>
+            <div className="product-buttons-add-and-details-box">
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="btn-product-details"
+              >
+                <div className="icon-and-details-box">
+                  <i className="fa-regular fa-hand-pointer"></i>
+                  <p className="text-details">Details</p>
+                </div>
+              </button>
 
-            <button onClick={() => addToCart()} className="btn-add-to-cart">
-              Add To Cart
-            </button>
+              <button onClick={() => addToCart()} className="btn-add-to-cart">
+                Add To Cart
+              </button>
+            </div>
           </div>
         }
       </div>

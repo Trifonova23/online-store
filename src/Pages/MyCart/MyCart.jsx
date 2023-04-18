@@ -3,13 +3,13 @@ import "./MyCart.css";
 import { deleteSingleProduct } from "../../reducers/cart";
 import { useSelector, useDispatch } from "react-redux";
 
-const MyCart = (product) => {
+const MyCart = () => {
   const productsInCart = useSelector((state) => state.cart.productInCart);
   const dispatch = useDispatch();
 
-  const handleDelete = () => {
-    dispatch(deleteSingleProduct(product.id));
-  };
+  // const handleDelete = (product) => {
+  //   dispatch(deleteSingleProduct(product.id));
+  // };
 
   return (
     <div className="main-page-my-cart">
@@ -29,8 +29,8 @@ const MyCart = (product) => {
 
             <div className="product-price">{product.price}</div>
             <button
-              // onClick={() => dispatch(deleteSingleProduct(product.id))}
-              onClick={handleDelete}
+              onClick={() => dispatch(deleteSingleProduct(product.id))}
+              // onClick={()=>handleDelete(product)}
               className="btn-remove-this-product"
             >
               X
