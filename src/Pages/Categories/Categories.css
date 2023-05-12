@@ -1,15 +1,19 @@
 .wrapper-categories-page {
   display: flex;
   justify-content: center;
+  margin: 120px;
 }
 .wrapper-categories-page .main-box-categories {
   display: flex;
   flex-direction: row;
 }
-.main-box-categories img {
+.wrapper-categories-page .main-box-categories img {
   width: 330px;
   height: 320px;
   border-radius: 5px;
+}
+.wrapper-categories-page .main-box-categories img:hover {
+  box-shadow: rgba(255, 5, 255, 0.1) 5px 5px 5px;
 }
 .wrapper-categories-page .main-box-categories button {
   width: 250px;
@@ -20,10 +24,19 @@
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: black;
   font-size: 20px;
+  background-color: white;
+  color: purple;
 }
-.main-box-categories .button:hover {
-  background-color: rgb(206, 181, 19);
+.wrapper-categories-page .main-box-categories .button:hover {
+  box-shadow: rgba(255, 5, 255, 0.1) 2px 6px 16px;
+  background-color: white;
+  color: purple;
+  border: 2px solid purple;
+}
+.wrapper-categories-page .main-box-categories .category-electronic,
+.wrapper-categories-page .main-box-categories .category-men-clothing,
+.wrapper-categories-page .main-box-categories .category-jewelry,
+.wrapper-categories-page .main-box-categories .category-wom-clothing {
+  margin: 5px;
 }

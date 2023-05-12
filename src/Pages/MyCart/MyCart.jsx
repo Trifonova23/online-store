@@ -33,7 +33,7 @@ const MyCart = () => {
               // onClick={()=>handleDelete(product)}
               className="btn-remove-this-product"
             >
-              X
+              <i class="fa-regular fa-trash-can"></i>
             </button>
           </div>
         </div>

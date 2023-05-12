@@ -12,6 +12,8 @@ export const counterSlice = createSlice({
       // action.payload is the data which is sent by the method
       let isInStorage = false;
 
+      console.log("add product test - cart ", action.payload);
+
       for (let i = 0; i < state.productInCart.length; i++) {
         if (state.productInCart[i].id === action.payload.id) {
           isInStorage = true;
@@ -19,6 +21,7 @@ export const counterSlice = createSlice({
         }
       }
       if (isInStorage === false) {
+        console.log("item is not in storage", action.payload);
         // state.productInCart.push(action.payload);
         state.productInCart = [...state.productInCart, action.payload];
       }
