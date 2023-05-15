@@ -12,6 +12,7 @@ function SelectedCategory() {
           {state.message.map((productInfo) => (
             <SingleProduct
               key={productInfo.id}
+              id={productInfo.id}
               title={productInfo.title}
               price={productInfo.price}
               image={productInfo.image}

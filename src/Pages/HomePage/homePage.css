@@ -1,98 +1,12 @@
 .wrapper-home-page {
   width: 100%;
   height: 100%;
-}
-.wrapper-home-page-main-container {
-  width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
-.wrapper-home-page-main-container .home-page-header-container {
-  width: 100%;
-  height: 70px;
-  border: 2px solid black;
+.wrapper-home-page .wrapper-center {
+  width: 80%;
+}
+.wrapper-home-page .wrapper-center .header-home-page p {
   display: flex;
-  justify-content: space-between;
-  background: white;
-  align-items: center;
-}
-.wrapper-home-page-main-container .left-part-img-logo img {
-  width: 223px;
-}
-.home-page-header-container .middle-part-elements {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.home-page-header-container .middle-part-elements button {
-  border: 1px solid black;
-  border-radius: 40px;
-  width: 150px;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-}
-.home-page-header-container .left-part-card-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 1px solid black;
-  border-radius: 40px;
-  width: 150px;
-  height: 60px;
-}
-.home-page-main-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.wrapper-part-of-products .main-container-part-of-products {
-  height: 700px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.main-container-part-of-products .single-product-box {
-  width: 33%;
-  height: 250px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.single-product-box .product-img img {
-  width: 150px;
-  height: auto;
-}
-.single-product-box .product-name-and-price {
-  display: flex;
-  flex-direction: column;
-}
-.single-product-box .product-name,
-.single-product-box .product-price,
-.single-product-box .btn-product-details {
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
-  width: 110px;
-  height: 30px;
-  border-radius: 20px;
-  margin-top: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: rgb(0, 0, 0);
-}
-.single-product-box .btn-product-details .icon-and-details-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }

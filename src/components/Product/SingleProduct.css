@@ -1,0 +1,94 @@
+.wrapper-home-page {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.wrapper-home-page .wrapper-center {
+  width: 80%;
+}
+.wrapper-home-page .wrapper-center .header-home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+.products-box-home-page {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 80px;
+}
+.single-product-box {
+  align-items: center;
+  width: 380px;
+  height: 300px;
+  box-shadow: rgba(255, 5, 255, 0.1) 1px 1px 1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 50px;
+  margin: 5px;
+}
+.single-product-box:hover {
+  transform: translateY(4px);
+}
+.title-price-btn-cart {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px;
+}
+.img-product img {
+  height: 100px;
+  width: fit-content;
+}
+.btn-add-to-cart {
+  background: white;
+  width: 130px;
+  height: 40px;
+  border-radius: 25px;
+  text-align: center;
+  color: purple;
+  font-weight: bold;
+  border: 1px solid purple;
+  font-family: cursive;
+}
+.single-product-box .btn-add-to-cart:hover {
+  background-color: white;
+  color: purple;
+  transform: translateY(4px);
+  box-shadow: rgba(255, 5, 255, 0.1) 2px 6px 16px;
+}
+.single-product-box .title-price-btn-cart {
+  font-family: cursive;
+  font-weight: bold;
+}
+.title-price-btn-cart .product-price {
+  margin: 5px;
+}
+.title-price-btn-cart .btn-product-details {
+  font-family: cursive;
+  background: white;
+  width: 130px;
+  height: 40px;
+  border-radius: 25px;
+  text-align: center;
+  color: purple;
+  font-weight: bold;
+  border: 1px solid purple;
+}
+.title-price-btn-cart .btn-product-details:hover {
+  background-color: white;
+  color: purple;
+  transform: translateY(4px);
+  box-shadow: rgba(255, 5, 255, 0.1) 2px 6px 16px;
+}
+.title-price-btn-cart .btn-product-details div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

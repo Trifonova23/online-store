@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import logo from "../../images/logo1-img.png";
+import logo from "../../images/SSpotLogo.png";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -17,22 +17,24 @@ const Header = () => {
           <img src={logo} alt="shoppingSpace" />
         </div>
         <div className="navLinks">
-          <button className="nav-home">
-            <Link to="/">Home</Link>
-          </button>
-          <button className="nav-all-products">
-            <Link to="products">All Products</Link>
-          </button>
-          <button className="nav-categories">
-            <Link to="categories">Categories</Link>
-          </button>
-        </div>
+          <Link className="nav-home" to="/">
+            Home
+          </Link>
 
+          <Link className="nav-all-products" to="products">
+            All Products
+          </Link>
+
+          <Link className="nav-categories" to="categories">
+            Categories
+          </Link>
+        </div>
         <div className="cart-box">
-          <button className="button">
-            <Link to="my-cart"> {productCountInCart} My Cart </Link>
+          <Link className="button" to="my-cart">
+            {" "}
+            {productCountInCart} My Cart
             <i className="fa-solid fa-cart-shopping"></i>
-          </button>
+          </Link>
         </div>
       </div>
     </nav>
