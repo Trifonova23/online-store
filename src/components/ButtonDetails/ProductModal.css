@@ -8,20 +8,44 @@
   transform: translate(-50%, -50%);
   bottom: 0;
   right: 0;
-  background-color: #d3c441;
-  width: 500px;
-  height: 500px;
+  background-color: #ffe7f8;
+  width: 650px;
+  height: 350px;
   flex-direction: column;
   border-radius: 10px;
+  z-index: 999;
+  color: #500050;
+  font-weight: bold;
 }
 .modal-box .wrapper-modal-box {
   display: flex;
   flex-direction: column;
+  margin: 100px;
+}
+.modal-box .wrapper-modal-box .modal-box-button {
+  display: flex;
+  justify-content: right;
 }
 .modal-box .wrapper-modal-box .modal-box-button button {
   display: flex;
   justify-content: end;
   align-items: center;
+  background: white;
+  color: purple;
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+.modal-box .wrapper-modal-box .modal-box-button button:hover {
+  border: 1px solid purple;
+  background-color: white;
+  color: purple;
+  transform: scale(1.1);
+  font-weight: bold;
 }
 .modal-box .wrapper-modal-box .modal-box-title .product-title p {
   width: 50px;

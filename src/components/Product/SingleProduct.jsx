@@ -26,78 +26,44 @@ const SingleProduct = ({ price, image, title, description, id }) => {
   const dispatch = useDispatch();
 
   return (
-    // <div className="single-product-box">
-    //   <div className="product-img">
-    //     <div className="product-image-box">
-    //       <img src={image} alt="" />
-    //     </div>
-    //     {
-    //       <div className="product-name-and-price">
-    //         <div className="product-name">{title}</div>
-    //         <div className="product-price">
-    //           <i className="fa-solid fa-dollar-sign"></i> {price}{" "}
-    //         </div>
-    //         <div className="description-product">
-    //           <p className="description-text">
-    //             {description ? description : ""}
-    //           </p>
-    //         </div>
-    //         <div className="product-buttons-add-and-details-box">
-    //           <button
-    //             onClick={() => setIsModalOpen(true)}
-    //             className="btn-product-details"
-    //           >
-    //             <div className="icon-and-details-box">
-    //               <i className="fa-regular fa-hand-pointer"></i>
-    //               <p className="text-details">Details</p>
-    //             </div>
-    //           </button>
-
-    //           <button onClick={() => addToCart()} className="btn-add-to-cart">
-    //             Add To Cart
-    //           </button>
-    //         </div>
-    //       </div>
-    //     }
-    //   </div>
-    //   <div className="modal-container">
-    //     {isModalOpen && (
-    //       <ProductModal
-    //         title={title}
-    //         description={description}
-    //         closeModal={closeModalHandler}
-    //       />
-    //     )}
-    //   </div>
-    // </div>
-
-    <div className="wrapper-single-product-box">
-      <div className="single-product-box">
-        <div className="img-product">
-          <img src={image} alt="img" />
-        </div>
-        <div className="title-price-btn-cart">
-          <div className="product-title">{title}</div>
-          <div className="product-price">
-            <i className="fa-solid fa-dollar-sign"></i> {price}{" "}
+    <>
+      <div className="wrapper-single-product-box">
+        <div className="single-product-box">
+          <div className="img-product">
+            <img src={image} alt="img" />
           </div>
-          <div className="buttons-details-add-to-cart">
-            <button onClick={() => addToCart()} className="btn-add-to-cart">
-              Add To Cart
-            </button>
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="btn-product-details"
-            >
-              <div className="icon-and-details-box">
-                <i className="fa-regular fa-hand-pointer"></i>
-                <p className="text-details">Details</p>
-              </div>
-            </button>
+          <div className="title-price-btn-cart">
+            <div className="product-title">{title}</div>
+            <div className="product-price">
+              <i className="fa-solid fa-dollar-sign"></i> {price}{" "}
+            </div>
+            <div className="buttons-details-add-to-cart">
+              <button onClick={() => addToCart()} className="btn-add-to-cart">
+                Add To Cart
+              </button>
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="btn-product-details"
+              >
+                <div className="icon-and-details-box">
+                  <i className="fa-regular fa-hand-pointer"></i>
+                  <p className="text-details">Details</p>
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div className="modal-container">
+        {isModalOpen && (
+          <ProductModal
+            title={title}
+            description={description}
+            closeModal={closeModalHandler}
+          />
+        )}
+      </div>
+    </>
   );
 };
 
