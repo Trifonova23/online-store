@@ -8,6 +8,10 @@
   width: 310px;
   border-radius: 10px;
   height: 80px;
+  transition: all 0.2s ease-in-out;
+}
+.home-page-header-container img:hover {
+  transform: translateY(4px);
 }
 .home-page-header-container .cart-box .button {
   width: 200px;
@@ -30,7 +34,7 @@
   border: 2px solid purple;
   background-color: white;
   color: purple;
-  transform: translateY(4px);
+  transform: translateY(1px);
   font-weight: bold;
 }
 .home-page-header-container .navLinks {
@@ -53,6 +57,7 @@
   box-shadow: rgba(255, 5, 255, 0.1) 2px 6px 16px;
   color: purple;
   font-size: large;
+  transition: all 0.2s ease-in-out;
 }
 .home-page-header-container .navLinks .nav-home:hover,
 .home-page-header-container .navLinks .nav-all-products:hover,
@@ -60,7 +65,7 @@
   border: 2px solid purple;
   background-color: white;
   color: purple;
-  transform: translateY(4px);
+  transform: scale(1);
   font-weight: bold;
 }
 .home-page-header-container .navLinks a {
